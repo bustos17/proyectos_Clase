@@ -10,11 +10,12 @@ class RepositorioUsuarios{
             if($fila){
                 return true;
             }else{
-                return true;
+                return false;
             }
         }else{
-            return true;
+                return false;
         }
+
     }
     public static function contrasenaCorrecta($nombre,$contrasena){
         $sql='SELECT * FROM usuario WHERE nombre="'.$nombre.'"';
